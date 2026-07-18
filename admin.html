@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Admin Dashboard</h2>
+
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+    <h2 id="totalUsers"></h2>
+
+    <h2 id="totalLeads"></h2>
+
+    <hr><br>
+
+    <h3>Registered Users</h3>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Username</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="userTable"></tbody>
+
+    </table>
+
+    <br><br>
+
+    <h3>All Leads</h3>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Owner</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Source</th>
+                <th>Status</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="adminLeadTable"></tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

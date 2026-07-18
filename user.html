@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>User Dashboard</h2>
+
+    <div>
+        <span id="welcome"></span>
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="container">
+
+<h3>Add New Lead</h3>
+
+<div class="form">
+
+<input type="text" id="name" placeholder="Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="phone" placeholder="Phone">
+
+<select id="source">
+<option>Website</option>
+<option>Instagram</option>
+<option>Facebook</option>
+<option>Referral</option>
+</select>
+
+<select id="status">
+<option>New</option>
+<option>Contacted</option>
+<option>Converted</option>
+</select>
+
+<button onclick="addLead()">Add Lead</button>
+
+</div>
+
+<h3>My Leads</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Source</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="leadTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
